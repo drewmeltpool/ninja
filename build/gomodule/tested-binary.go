@@ -9,7 +9,9 @@ import (
 )
 
 var (
+
 	// Ninja rule to execute go build.
+
 	goBuild = pctx.StaticRule("binaryBuild", blueprint.RuleParams{
 		Command:     "cd $workDir && go build -o $outputPath $pkg",
 		Description: "build go command $pkg",

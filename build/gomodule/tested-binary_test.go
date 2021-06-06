@@ -14,7 +14,7 @@ func TestTestedBinFactory(t *testing.T) {
 
 	ctx.MockFileSystem(map[string][]byte{
 		"Blueprints": []byte(`
-			go_own_binary{
+			go_testedbinary {
 			  name: "test-out",
 			  srcs: ["test-src.go", "test-src_test.go"],
 			  pkg: ".",
@@ -26,7 +26,7 @@ func TestTestedBinFactory(t *testing.T) {
 		"test-src_test.go": nil,
 	})
 
-	ctx.RegisterModuleType("go_own_binary", TestedBinFactory)
+	ctx.RegisterModuleType("go_testedbinary", TestedBinFactory)
 
 	cfg := bood.NewConfig()
 

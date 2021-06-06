@@ -1,4 +1,4 @@
-go_own_binary {
+go_testedbinary {
   // Module (and output) name.
   name: "bood",
 
@@ -8,7 +8,18 @@ go_own_binary {
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"],
 
-  // Test inputs.
-  // testPkg: ["**/*_test.go"]
+  // Test package.
+  testPkg: "github.com/drewmeltpool/ninja/build/gomodule",
+}
+
+go_task {
+  // Module (and output) name.
+  name: "task",
+
+  // Go package to build.
+  pkg: "./...",
+
+  // Build inputs.
+  srcs: ["**/*.go", "../go.mod"]
 }
 
