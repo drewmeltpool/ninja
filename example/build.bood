@@ -3,10 +3,10 @@ go_testedbinary {
   name: "example_bin",
 
   // Go package to build.
-  pkg: "github.com/inovarka/se-lab1/example",
+  pkg: "github.com/drewmeltpool/ninja/example",
 
   // Go package to test.
-  testPkg: "github.com/inovarka/se-lab1/example",
+  testPkg: "github.com/drewmeltpool/ninja/example",
 
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"]
