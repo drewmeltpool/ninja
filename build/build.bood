@@ -12,9 +12,12 @@ go_testedbinary {
   testPkg: "github.com/drewmeltpool/ninja/build/gomodule",
 }
 
-go_task {
-  name: "greetArch",
 
-  binary: "bood"
-}
+//go_task {
+//  // Module (and output) name.
+//  name: "archive",
+
+//  // Find name.
+//  binary: "bood"
+//}
 
