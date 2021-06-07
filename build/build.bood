@@ -13,11 +13,11 @@ go_testedbinary {
 }
 
 
-//go_task {
-//  // Module (and output) name.
-//  name: "archive",
+go_task {
+  // Module (and output) name.
+  name: "archive",
 
-//  // Find name.
-//  binary: "bood"
-//}
+  // Find name.
+  binary: "bood"
+}
 
