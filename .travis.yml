@@ -11,6 +11,6 @@ addons:
 
 script:
   - cd ./build
-  - go build ./cmd/bood/main.go
+  - go run ./cmd/bood/main.go
   - ./main
   - cd ../example && ../build/out/bin/bood
