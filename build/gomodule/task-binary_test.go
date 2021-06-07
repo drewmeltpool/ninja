@@ -15,8 +15,8 @@ func TestArchiveBinFactory(t *testing.T) {
 	ctx.MockFileSystem(map[string][]byte{
 		"Blueprints": []byte(`
 			go_task {
-				name: "task",
-				binary: "task-out"
+				name: "test-archive",
+				binary: "test-out"
 			}
 		`),
 		"out/archiveDeps.dd": nil,

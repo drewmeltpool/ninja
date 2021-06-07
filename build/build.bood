@@ -13,13 +13,8 @@ go_testedbinary {
 }
 
 go_task {
-  // Module (and output) name.
-  name: "task",
+  name: "greetArch",
 
-  // Go package to build.
-  pkg: "./...",
-
-  // Build inputs.
-  srcs: ["**/*.go", "../go.mod"]
+  binary: "bood"
 }
 
